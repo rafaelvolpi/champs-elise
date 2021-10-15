@@ -1,0 +1,308 @@
+// Mixins
+
+
+
+// Cores
+
+
+
+$cinza: #aaaaaa;
+$bege: #fffbea;
+$dourado: #d0ad67;
+$verde: #9ddbca;
+$verde-escuro: #04423e;
+$laranja: #FFAA00;
+
+.cor-cinza { color: $cinza; }
+.cor-bege { color: $bege; }
+.cor-dourado { color: $dourado; }
+.cor-verde { color: $verde; }
+.cor-verde-escuro { color: $verde-escuro; }
+
+
+
+// Fontes
+
+@font-face { font-family: 'Golden Hopes Regular'; font-style: normal; font-weight: normal; src: local('Golden Hopes Regular'), url('./assets/golden-hopes-webfont/GoldenHopes-rgAlA.woff') format('woff'); }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100,200,400;700;900&display=swap');
+
+.golden-hopes {
+  font-family: 'Golden Hopes Regular';
+  font-size: 2em;
+  line-height: 0;
+}
+
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: $verde-escuro;
+}
+
+
+
+// Bootstrap hack
+
+
+.btn-cta {
+  background-color: $laranja;
+  border-color: $laranja;
+  color: $verde-escuro;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.07);
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.1) perspective(10px);
+  }
+}
+
+
+
+// Site
+
+section {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.folha {
+  position: absolute;
+  background-size: auto;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+#banner {
+  background-image: url(./assets/img/bg-banner.png);
+  background-position: center center;
+  background-size: contain;
+  color: white;
+  img {
+    max-width: 90%;
+  }
+  .btn-arthur {
+    background-color: rgba($verde,.3);
+    padding: .3rem .7rem;
+    width: 15.0rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    span {
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 0px 8px;
+      margin-right: 10px;
+      background-image: url(./assets/img/ico-btn-localizacao.png);
+    }
+  }
+  .titulo {
+    border-left: 2px solid $dourado;
+    padding-left: 15px;
+    width: 22rem;
+    margin-left: 1.2rem;
+    margin-top: 4rem;
+  }
+  h1 {
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    div {
+      display: flex;
+      flex-direction: row;
+      span.golden-hopes  {
+        line-height: 60%;
+        margin: 0;
+        padding: 0 0.1em 0 0.2em;
+      }
+    }
+  }
+  .ico-arrow-down {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0px 8px;
+    margin-left: 10px;
+    background-image: url(./assets/img/ico-arrow-down.svg);
+  }
+  .folha {
+    top: 80%;
+    left: 75%;
+    width: 25%;
+    height: 279px;
+    background-position: left top;
+    background-image: url(./assets/img/folha-01.png);
+    }
+}
+
+#conheca {
+  .familia {
+    margin-top: -3.5rem;
+  }
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .ico-casa {
+    background-image: url(./assets/img/ico-casa.svg);
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    margin-top: 2rem;
+    padding-left: 5.56rem;
+    color: $cinza;
+  }
+  .vista-aerea {
+    position: relative;
+    margin-top: 1.5rem;
+    .selo {
+      position: absolute;
+      top: 0;
+      width: 35%;
+    }
+    .foto {
+      margin-top: 3rem;
+
+    }
+  }
+  .folha {
+    top: 85%;
+    left: -25%;
+    width: 133px;
+    height: 187px;
+    background-position: right top;
+    background-image: url(./assets/img/folha-02.png);  
+  }
+}
+
+
+#natureza {
+  background-color: $verde-escuro;
+  background-image: url(./assets/img/bg-natureza.png);
+  background-position: center center;
+  background-size: contain;
+  color: white;
+  padding-bottom: 200px;
+  hr {
+    border: 1px solid $dourado;
+    background-color: $dourado;
+    opacity: 1;
+    color: $dourado;
+    width: 100px;
+  }
+  h2 {
+    position: relative;
+    font-size: 2rem;
+    span {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 1.5rem);
+      font-size: 5rem;
+    }
+  }
+  .conteudo {
+    margin-top: 5rem;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+  .folha {
+    top: 65%;
+    left: 70%;
+    width: 30%;
+    height: 426px;
+    background-position: left top;
+    background-image: url(./assets/img/folha-03.png);  
+  }
+}
+
+#mapa {
+  margin-top: -200px;
+  padding-bottom: 2rem;
+  .conteudo {
+    width: 17rem;
+    padding-top: 5rem;
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    margin-left: 6rem;
+    span {
+      position: absolute;
+      font-size: 5rem;
+      left: -5rem;
+    }
+  }
+}
+
+#itens {
+  padding-top: 0;
+  .bloco {
+    position: relative;
+    border-radius: 2rem;
+    background-color: $bege;
+    color: $cinza;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.07);
+    padding: 1.5rem 1.5rem 4rem 1.5rem;
+    margin-bottom: 7rem;
+    h3 {
+      color: $verde-escuro;
+    }
+    img {
+      position: absolute;
+      bottom: -5rem;
+      left: calc(50% - 61px);
+    }
+  }
+}
+
+#contato {
+  background-color: $verde-escuro;
+  background-image: url(./assets/img/bg-contato.png);
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  h2 {
+    span {
+      font-size: 3em;
+      vertical-align: middle;
+      padding-left: 0.3rem
+    }
+  }
+  form {
+    color: $dourado;
+    h3 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    input {
+      border: 2px solid $dourado;
+      border-radius: 100px;
+      color: white;
+      background-color: transparent;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      &::placeholder {
+        color: white;
+        opacity: 1;
+      }
+    }
+    button {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      width: 50%;
+    }
+  }
+}
+

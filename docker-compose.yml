@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+
+  apache:
+    image: 'php:7.4-apache'
+    container_name: champs-elise
+    restart: always
+    ports:
+      - '80:80'
+    volumes:
+      - ./html:/var/www/html

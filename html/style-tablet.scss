@@ -1,0 +1,106 @@
+html {
+  font-size: 16px;
+}
+
+#banner {
+  img {
+    max-width: 70%;
+  }
+  .titulo {
+    margin-top: 0;
+    width: auto;
+    margin-left: 0;
+  }
+  .folha {
+    top: 52%;
+  }
+}
+
+#conheca {
+  background-image: url(./assets/img/bg-malha.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 1050px) 700px;
+  .familia {
+    margin-top: 0;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  .ico-casa {
+    max-width: 28rem;
+    font-size: 1rem;
+  }
+  .vista-aerea {
+    margin-top: -4rem;
+    .selo {
+      width: 11.5rem;
+    }
+    .foto {
+      border: 1rem white solid;
+    }
+  }
+  .folha {
+    left: -1%;
+  }
+}
+
+#natureza {
+  padding-bottom: 5rem;
+  h2 {
+    font-size: 1.6rem;
+    span {
+      font-size: 4.5rem;
+      left: 8.4rem;
+      top: calc(100% + 1.9rem);
+    }
+  }
+  .conteudo {
+    margin-top: 2rem;
+    margin-left: -3rem;
+    font-size: 1rem;
+  }
+  .btn {
+    margin-top: 2rem;
+  }
+  .folha {
+    top: 50%;
+    left: 85%;
+    width: 15%;
+  }
+}
+
+#mapa {
+  margin-top: -8rem;
+  .conteudo {
+    width: auto;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: auto;
+    margin: 0;
+    margin-top: 11rem;
+    span {
+      font-size: 4.6rem;
+      left: 0;
+    }
+  }
+}
+
+#itens {
+  .bloco {
+    width: 30%;
+    img {
+      bottom: -4.5rem;
+    }
+  }
+}
+
+#contato {
+  .folha {
+    top: -10rem;
+    left: -35%;
+    width: 439px;
+    height: 390px;
+    background-position: right top;
+    background-image: url(./assets/img/folha-04.png);
+  }
+}
