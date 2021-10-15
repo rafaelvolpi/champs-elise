@@ -80,7 +80,7 @@
           </div> 
           <div class="col-md-4 conteudo">
             <p>O Champs Élysées reúne a calmaria da natureza e a urbanização das cidades, oferecendo a você o melhor estilo de vida. Além disso, todo o território orgânico ao redor é preservado e completamente acessível.</p>
-            <? echo cta("QUERO SABER MAIS"); ?>
+            <div class="text-center text-md-start"><? echo cta("QUERO SABER MAIS"); ?></div>
           </div> 
         </div>
       </div>
@@ -187,7 +187,7 @@
                 </label>
               </div>
               <div class="mt-2 mb-4 text-center">
-                <button type="submit" class="btn btn-cta rounded-pill ps-5 pe-5">Enviar</button>
+                <button type="submit" class="btn btn-cta rounded-pill ps-5 pe-5">ENVIAR</button>
               </div>
             </form>
           </div>
