@@ -3,8 +3,6 @@ html {
 }
 
 #banner {
-  img {
-  }
   .titulo {
     margin-top: 0;
     width: auto;
@@ -27,13 +25,14 @@ html {
     margin-top: 0;
   }
   h2 {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   p {
     max-width: 23rem;
   }
   .ico-casa {
     max-width: 28rem;
+    margin-top: 1rem;
   }
   .vista-aerea {
     margin-top: -11rem;
@@ -83,16 +82,17 @@ html {
   background-image: url(./assets/img/bg-malha.png);
   background-repeat: no-repeat;
   background-position: calc(50% + 1100px) 7rem;
-  margin-top: -7rem;
+  margin-top: -3rem;
   padding-bottom: 5rem;
+  padding-top: 0;
   .conteudo {
     width: auto;
     padding-top: 13rem;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     line-height: 6rem;
-    margin-left: 6rem;
+    margin-left: 8rem;
     span {
-      font-size: 7rem;
+      font-size: 6rem;
       left: -10rem;
     }
   }

@@ -24,13 +24,14 @@ html {
   margin-top: 0;
 }
 #conheca h2 {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 #conheca p {
   max-width: 23rem;
 }
 #conheca .ico-casa {
   max-width: 28rem;
+  margin-top: 1rem;
 }
 #conheca .vista-aerea {
   margin-top: -11rem;
@@ -79,18 +80,19 @@ html {
   background-image: url(./assets/img/bg-malha.png);
   background-repeat: no-repeat;
   background-position: calc(50% + 1100px) 7rem;
-  margin-top: -7rem;
+  margin-top: -3rem;
   padding-bottom: 5rem;
+  padding-top: 0;
 }
 #mapa .conteudo {
   width: auto;
   padding-top: 13rem;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   line-height: 6rem;
-  margin-left: 6rem;
+  margin-left: 8rem;
 }
 #mapa .conteudo span {
-  font-size: 7rem;
+  font-size: 6rem;
   left: -10rem;
 }
 
