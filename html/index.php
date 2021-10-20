@@ -145,7 +145,7 @@
         <div class="row justify-content-center">
           <div class="col-md-6">
             <h2>Converse conosco e <br>tenha a <span class="golden-hopes cor-dourado">natureza</span><br> como o quintal da<br> sua casa</h2>
-            <form action="#lp-champs-elysees" id="lp-champs-elysees" name="lp-champs-elysees" onsubmit="return false">
+            <form action="#lp-champs-elysees" id="lp-champs-elysees" name="lp-champs-elysees" onsubmit="formsubmit(event)">
               <div class="mb-3 mt-5">
                 <input type="name" class="form-control" id="nome" rows="3" placeholder="Nome*" required>
                 </div>
@@ -198,7 +198,7 @@
                 </label>
               </div>
               <div class="mt-2 mb-4 text-center">
-                <button type="submit" class="btn btn-cta rounded-pill ps-5 pe-5" onclick="formsubmit(event)">ENVIAR</button>
+                <button type="submit" class="btn btn-cta rounded-pill ps-5 pe-5">ENVIAR</button>
               </div>
             </form>
             <div class="d-none mt-5 mb-5" id="form-enviado">Formulário enviado com sucesso!</div>
