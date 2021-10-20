@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/0f24b302-4a40-4213-b751-e0b26dffaa57-loader.js"></script>
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" media="(min-width: 768px) and (max-width: 1200px)" href="style-tablet.min.css">
     <link rel="stylesheet" media="(min-width: 1201px)" href="style-desktop.min.css">
@@ -144,58 +145,82 @@
         <div class="row justify-content-center">
           <div class="col-md-6">
             <h2>Converse conosco e <br>tenha a <span class="golden-hopes cor-dourado">natureza</span><br> como o quintal da<br> sua casa</h2>
-            <form action="#" id="form">
+            <form action="#lp-champs-elysees" id="lp-champs-elysees" name="lp-champs-elysees" onsubmit="return false">
               <div class="mb-3 mt-5">
-                <input type="name" class="form-control" id="nome" rows="3" placeholder="Nome*">
+                <input type="name" class="form-control" id="nome" rows="3" placeholder="Nome*" required>
                 </div>
                 <div class="mb-3">
-                <input type="email" class="form-control" id="email" placeholder="Email*">
+                <input type="email" class="form-control" id="email" placeholder="Email*" required>
               </div>
               <div class="mb-3">
-                <input type="text" class="form-control" id="telefone" placeholder="Telefone*">
+                <input type="text" class="form-control" id="telefone" placeholder="Telefone*" required>
+              </div>
+              <h3>Qual sua região?</h3>
+              <div>
+                <select class="form-select" name="regiao" id="regiao">
+                  <option disabled selected>Selecione sua região</option>
+                  <option value="São Paulo">São Paulo</option>
+                  <option value="Campinas">Campinas</option>
+                  <option value="Limeira">Limeira</option>
+                  <option value="Artur Nogueira">Artur Nogueira</option>
+                </select>
               </div>
               <h3>Você é:</h3>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="voce-e" id="voce-e-investidor">
-                <label class="form-check-label" for="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="sou" id="voce-e-investidor" value="investidor">
+                <label class="form-check-label" for="voce-e-investidor">
                   Investidor
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="voce-e" id="voce-e-comprador">
-                <label class="form-check-label" for="flexRadioDefault2">
+                <input class="form-check-input" type="radio" name="sou" id="voce-e-comprador" value="comprador">
+                <label class="form-check-label" for="voce-e-comprador">
                   Comprador
                 </label>
               </div>
               <h3>Por onde prefere ser contatado?</h3>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="prefere-contato" id="prefere-contato-whatsapp">
+                <input class="form-check-input" type="radio" name="contato" id="prefere-contato-whatsapp" value="whatsapp">
                 <label class="form-check-label" for="prefere-contato-whatsapp">
                   Whatsapp
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="prefere-contato" id="prefere-contato-email">
+                <input class="form-check-input" type="radio" name="contato" id="prefere-contato-email" value="email">
                 <label class="form-check-label" for="prefere-contato-email">
                   E-mail
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="prefere-contato" id="prefere-contato-telefone">
+                <input class="form-check-input" type="radio" name="contato" id="prefere-contato-telefone" value="telefone">
                 <label class="form-check-label" for="prefere-contato-telefone">
                   Telefone
                 </label>
               </div>
               <div class="mt-2 mb-4 text-center">
-                <button type="submit" class="btn btn-cta rounded-pill ps-5 pe-5">ENVIAR</button>
+                <button type="submit" class="btn btn-cta rounded-pill ps-5 pe-5" onclick="formsubmit(event)">ENVIAR</button>
               </div>
             </form>
+            <div class="d-none mt-5 mb-5" id="form-enviado">Formulário enviado com sucesso!</div>
           </div>
         </div>
       </div>
       <div class="folha"></div>
     </section>
 
+    <script>
+      function formsubmit(event) {
+
+        event.preventDefault();
+
+        var element = document.getElementById("form-enviado");
+          element.classList.remove("d-none");
+
+        var element = document.getElementById("lp-champs-elysees");
+          element.classList.add("d-none");
+
+      }
+    </script>
 
   </body>
 </html>

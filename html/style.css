@@ -271,7 +271,7 @@ section {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-#contato form input {
+#contato form input, #contato form select {
   border: 2px solid #d0ad67;
   border-radius: 100px;
   color: white;
@@ -279,7 +279,7 @@ section {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
-#contato form input::placeholder {
+#contato form input::placeholder, #contato form select::placeholder {
   color: white;
   opacity: 1;
 }
