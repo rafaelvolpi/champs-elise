@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" media="(min-width: 768px) and (max-width: 1200px)" href="style-tablet.min.css">
     <link rel="stylesheet" media="(min-width: 1201px)" href="style-desktop.min.css">
+
+    <!-- Facebook Pixel Code --><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '567798134434420'); fbq('track', 'PageView');</script><noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=567798134434420&ev=PageView&noscript=1"/></noscript><!-- End Facebook Pixel Code -->
+
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -221,6 +224,8 @@
 
       }
     </script>
+
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/0f24b302-4a40-4213-b751-e0b26dffaa57-loader.js" ></script>
 
   </body>
 </html>
